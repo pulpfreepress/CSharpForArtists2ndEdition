@@ -1,0 +1,56 @@
+<Project DefaultTargets="Run"
+				 ToolsVersion="4.0"
+         xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    
+   
+   <PropertyGroup>
+     <IncludeDebugInformation>false</IncludeDebugInformation>
+     <BuildDir>build</BuildDir>
+     <AppDir>app</AppDir>
+     <RefDir>ref</RefDir>
+     <ConfigDir>config</ConfigDir>
+   </PropertyGroup>
+   
+    <ItemGroup>
+      
+      <APP Include="app\EmployeeTrainingClient.cs" />
+      <REF Include="ref\**\*.dll" />   
+      <CONFIG Include="config\**\*.config" />
+      <EXE Include="app\**\*.exe" />
+    </ItemGroup>
+    
+    <Target Name="MakeDirs">
+      <MakeDir Directories="$(BuildDir)" />
+    </Target>
+    
+    <Target Name="RemoveDirs">
+      <RemoveDir Directories="$(BuildDir)" />
+    </Target>
+    
+    <Target Name="Clean" 
+            DependsOnTargets="RemoveDirs;MakeDirs">
+    </Target>
+            
+     <Target Name="CopyFiles">
+       <Copy
+         SourceFiles="@(CONFIG);@(REF)"
+         DestinationFolder="$(BuildDir)" />
+    </Target>
+    
+    <Target Name="CompileApp"
+            Inputs="@(APP)"
+            Outputs="$(BuildDir)\$(MSBuildProjectName).exe"
+            DependsOnTargets="Clean">
+      <Csc Sources="@(APP)"
+           TargetType="exe"
+           References="@(REF)"
+           OutputAssembly="$(BuildDir)\$(MSBuildProjectName).exe">
+      </Csc>
+    </Target>
+    
+    <Target Name="Run" 
+            DependsOnTargets="CompileApp;CopyFiles">
+      <Exec Command="$(MSBuildProjectName).exe"
+            WorkingDirectory="$(BuildDir)" />
+    </Target>
+</Project>

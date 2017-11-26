@@ -1,0 +1,7 @@
+public class TestDriver {
+  public static void Main(){
+    B b = new B();
+    A a = new A(b);
+    a.MakeContainedObjectSayHi();
+  }
+}

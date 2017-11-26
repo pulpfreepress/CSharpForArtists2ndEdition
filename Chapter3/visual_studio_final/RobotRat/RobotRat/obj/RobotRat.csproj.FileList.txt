@@ -1,0 +1,2 @@
+obj\Release\RobotRat.exe
+obj\Release\RobotRat.pdb

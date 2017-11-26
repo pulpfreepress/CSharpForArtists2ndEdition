@@ -1,0 +1,111 @@
+<Project DefaultTargets="CompileApp"
+				 ToolsVersion="4.0"
+				 xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+
+	<PropertyGroup>
+		<IncludeDebugInformation>false</IncludeDebugInformation>
+		<BuildDir>build</BuildDir>
+		<LibDir>lib</LibDir>
+		<AppDir>app</AppDir>
+		<RefDir>ref</RefDir>
+		<ConfigDir>config</ConfigDir>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<DAO Include="dao\**\*.cs" />
+		<BO Include="bo\**\*.cs" />
+		<VO Include="vo\**\*.cs" />
+		<APP Include="app\EmployeeTrainingServer.cs" />
+		<REMOTEINTERFACE Include="app\IEmployeeTraining.cs" />
+		<REMOTEOBJECT Include="app\EmployeeTrainingRemoteObject.cs" />
+		<LIB Include="lib\**\*.dll" />
+		<REF Include="ref\**\*.dll" />   
+		<CONFIG Include="config\**\*.config" />
+		<EXE Include="app\**\*.exe" />
+	</ItemGroup>
+
+	<Target Name="MakeDirs">
+		<MakeDir Directories="$(BuildDir)" />
+		<MakeDir Directories="$(LibDir)" />
+	</Target>
+
+	<Target Name="RemoveDirs">
+		<RemoveDir Directories="$(BuildDir)" />
+		<RemoveDir Directories="$(LibDir)" />
+	</Target>
+
+	<Target Name="Clean" 
+					DependsOnTargets="RemoveDirs;MakeDirs">
+	</Target>
+      
+	<Target Name="CopyFiles">
+		<Copy
+			SourceFiles="@(CONFIG);@(LIB);@(REF)"
+			DestinationFolder="$(BuildDir)" />
+	</Target>
+
+	<Target Name="CompileVO" 
+					Inputs="@(VO)"
+					Outputs="$(LibDir)\VOLib.dll">
+		<Csc  Sources="@(VO)"
+					TargetType="library" 
+					References="@(REF);@(LIB)"
+					OutputAssembly="$(LibDir)\VOLib.dll">
+		</Csc>
+	</Target>
+
+	<Target Name="CompileDAO"
+					Inputs="@(DAO)"
+					Outputs="$(LibDir)\DAOLib.dll"
+					DependsOnTargets="CompileVO">
+		<Csc  Sources="@(DAO)"
+					TargetType="library" 
+					References="@(REF);@(LIB)"
+					WarningLevel="0"
+					OutputAssembly="$(LibDir)\DAOLib.dll">
+		</Csc>            
+	</Target>
+
+	<Target Name="CompileBO"
+					Inputs="@(BO)"
+					Outputs="$(LibDir)\BOLib.dll"
+					DependsOnTargets="CompileDAO">
+		<Csc  Sources="@(BO)"
+					TargetType="library" 
+					References="@(REF);@(LIB)"
+					WarningLevel="0"
+					OutputAssembly="$(LibDir)\BOLib.dll">
+		</Csc>           
+	</Target>
+
+	<Target Name="CompileApp"
+					Inputs="@(APP);@(REMOTEINTERFACE);@(REMOTEOBJECT)"
+					Outputs="$(BuildDir)\$(MSBuildProjectName).exe;
+									 $(LibDir)\IEmployeeTraining.dll;
+									 $(LibDir)\EmployeeTrainingRemoteObject.dll"
+					DependsOnTargets="CompileBO">
+		<Csc  Sources="@(REMOTEINTERFACE)"
+					TargetType="library"
+					References="@(REF);@(LIB)"
+					OutputAssembly="$(LibDir)\IEmployeeTraining.dll">
+		</Csc>
+		<Csc  Sources="@(REMOTEOBJECT)"
+					TargetType="library"
+					References="@(REF);@(LIB)"
+					OutputAssembly="$(LibDir)\EmployeeTrainingRemoteObject.dll">
+		</Csc>
+		<Csc  Sources="@(APP)"
+					TargetType="exe"
+					References="@(REF);@(LIB)"
+					OutputAssembly="$(BuildDir)\$(MSBuildProjectName).exe">
+		</Csc>
+	</Target>
+
+	<Target Name="Run" 
+					DependsOnTargets="CompileApp;CopyFiles">
+			<Exec Command="$(MSBuildProjectName).exe"
+						WorkingDirectory="$(BuildDir)" />
+	</Target>
+    
+</Project>

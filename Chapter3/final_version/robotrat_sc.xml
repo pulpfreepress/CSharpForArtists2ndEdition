@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<reflection>
+  <assemblies>
+    <assembly name="RobotRat" version="0.0.0.0" culture="" key="" hash="SHA1">
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.CompilationRelaxationsAttribute" ref="true" />
+          <argument>
+            <type api="T:System.Int32" ref="false" />
+            <value>8</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.RuntimeCompatibilityAttribute" ref="true" />
+          <assignment name="WrapNonExceptionThrows">
+            <type api="T:System.Boolean" ref="false" />
+            <value>True</value>
+          </assignment>
+        </attribute>
+      </attributes>
+    </assembly>
+  </assemblies>
+  <apis>
+    <api id="R:Project">
+      <apidata group="root" pseudo="true" />
+      <elements>
+        <element api="N:" />
+      </elements>
+    </api>
+    <api id="N:">
+      <apidata name="" group="namespace" />
+      <elements>
+        <element api="T:RobotRat" />
+      </elements>
+    </api>
+    <api id="T:RobotRat">
+      <apidata name="RobotRat" group="type" subgroup="class" />
+      <typedata visibility="public" abstract="false" sealed="false" serializable="false" layout="auto" format="ansi" />
+      <family>
+        <ancestors>
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <elements>
+        <element api="M:RobotRat.#ctor(System.Int32,System.Int32)" />
+        <element api="M:RobotRat.PrintMenu" />
+        <element api="M:RobotRat.ProcessMenuChoice" />
+        <element api="M:RobotRat.SetPenUp" />
+        <element api="M:RobotRat.SetPenDown" />
+        <element api="M:RobotRat.TurnRight" />
+        <element api="M:RobotRat.TurnLeft" />
+        <element api="M:RobotRat.PrintFloor" />
+        <element api="M:RobotRat.PrintErrorMessage" />
+        <element api="M:RobotRat.Run" />
+        <element api="M:RobotRat.MoveForward" />
+        <element api="M:RobotRat.GetSpacesToMove" />
+        <element api="M:RobotRat.Main(System.String[])" />
+        <element api="M:System.Object.ToString" />
+        <element api="M:System.Object.Equals(System.Object)" />
+        <element api="M:System.Object.GetHashCode" />
+        <element api="M:System.Object.GetType" />
+        <element api="M:System.Object.Finalize" />
+        <element api="M:System.Object.MemberwiseClone" />
+      </elements>
+      <containers>
+        <library assembly="RobotRat" module="RobotRat" />
+        <namespace api="N:" />
+      </containers>
+    </api>
+    <api id="M:RobotRat.#ctor(System.Int32,System.Int32)">
+      <apidata name=".ctor" group="member" subgroup="constructor" />
+      <memberdata visibility="public" static="false" special="true" />
+      <parameters>
+        <parameter name="rows">
+          <type api="T:System.Int32" ref="false" />
+        </parameter>
+        <parameter name="cols">
+          <type api="T:System.Int32" ref="false" />
+        </parameter>
+      </parameters>
+      <containers>
+        <library assembly="RobotRat" module="RobotRat" />
+        <namespace api="N:" />
+        <type api="T:RobotRat" ref="true" />
+      </containers>
+    </api>
+    <api id="M:RobotRat.GetSpacesToMove">
+      <apidata name="GetSpacesToMove" group="member" subgroup="method" />
+      <memberdata visibility="public" static="false" special="false" />
+      <proceduredata abstract="false" virtual="false" final="false" />
+      <returns>
+        <type api="T:System.Int32" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="RobotRat" module="RobotRat" />
+        <namespace api="N:" />
+        <type api="T:RobotRat" ref="true" />
+      </containers>
+    </api>
+    <api id="M:RobotRat.Main(System.String[])">
+      <apidata name="Main" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" special="false" />
+      <proceduredata abstract="false" virtual="false" final="false" />
+      <parameters>
+        <parameter name="args">
+          <arrayOf rank="1">
+            <type api="T:System.String" ref="true" />
+          </arrayOf>
+        </parameter>
+      </parameters>
+      <containers>
+        <library assembly="RobotRat" module="RobotRat" />
+        <namespace api="N:" />
+        <type api="T:RobotRat" ref="true" />
+      </containers>
+    </api>
+    <api id="M:RobotRat.MoveForward">
+      <apidata name="MoveForward" group="member" subgroup="method" />
+      <memberdata visibility="public" static="false" special="false" />
+      <proceduredata abstract="false" virtual="false" final="false" />
+      <containers>
+        <library assembly="RobotRat" module="RobotRat" />
+        <namespace api="N:" />
+        <type api="T:RobotRat" ref="true" />
+      </containers>
+    </api>
+    <api id="M:RobotRat.PrintErrorMessage">
+      <apidata name="PrintErrorMessage" group="member" subgroup="method" />
+      <memberdata visibility="public" static="false" special="false" />
+      <proceduredata abstract="false" virtual="false" final="false" />
+      <containers>
+        <library assembly="RobotRat" module="RobotRat" />
+        <namespace api="N:" />
+        <type api="T:RobotRat" ref="true" />
+      </containers>
+    </api>
+    <api id="M:RobotRat.PrintFloor">
+      <apidata name="PrintFloor" group="member" subgroup="method" />
+      <memberdata visibility="public" static="false" special="false" />
+      <proceduredata abstract="false" virtual="false" final="false" />
+      <containers>
+        <library assembly="RobotRat" module="RobotRat" />
+        <namespace api="N:" />
+        <type api="T:RobotRat" ref="true" />
+      </containers>
+    </api>
+    <api id="M:RobotRat.PrintMenu">
+      <apidata name="PrintMenu" group="member" subgroup="method" />
+      <memberdata visibility="public" static="false" special="false" />
+      <proceduredata abstract="false" virtual="false" final="false" />
+      <containers>
+        <library assembly="RobotRat" module="RobotRat" />
+        <namespace api="N:" />
+        <type api="T:RobotRat" ref="true" />
+      </containers>
+    </api>
+    <api id="M:RobotRat.ProcessMenuChoice">
+      <apidata name="ProcessMenuChoice" group="member" subgroup="method" />
+      <memberdata visibility="public" static="false" special="false" />
+      <proceduredata abstract="false" virtual="false" final="false" />
+      <containers>
+        <library assembly="RobotRat" module="RobotRat" />
+        <namespace api="N:" />
+        <type api="T:RobotRat" ref="true" />
+      </containers>
+    </api>
+    <api id="M:RobotRat.Run">
+      <apidata name="Run" group="member" subgroup="method" />
+      <memberdata visibility="public" static="false" special="false" />
+      <proceduredata abstract="false" virtual="false" final="false" />
+      <containers>
+        <library assembly="RobotRat" module="RobotRat" />
+        <namespace api="N:" />
+        <type api="T:RobotRat" ref="true" />
+      </containers>
+    </api>
+    <api id="M:RobotRat.SetPenDown">
+      <apidata name="SetPenDown" group="member" subgroup="method" />
+      <memberdata visibility="public" static="false" special="false" />
+      <proceduredata abstract="false" virtual="false" final="false" />
+      <containers>
+        <library assembly="RobotRat" module="RobotRat" />
+        <namespace api="N:" />
+        <type api="T:RobotRat" ref="true" />
+      </containers>
+    </api>
+    <api id="M:RobotRat.SetPenUp">
+      <apidata name="SetPenUp" group="member" subgroup="method" />
+      <memberdata visibility="public" static="false" special="false" />
+      <proceduredata abstract="false" virtual="false" final="false" />
+      <containers>
+        <library assembly="RobotRat" module="RobotRat" />
+        <namespace api="N:" />
+        <type api="T:RobotRat" ref="true" />
+      </containers>
+    </api>
+    <api id="M:RobotRat.TurnLeft">
+      <apidata name="TurnLeft" group="member" subgroup="method" />
+      <memberdata visibility="public" static="false" special="false" />
+      <proceduredata abstract="false" virtual="false" final="false" />
+      <containers>
+        <library assembly="RobotRat" module="RobotRat" />
+        <namespace api="N:" />
+        <type api="T:RobotRat" ref="true" />
+      </containers>
+    </api>
+    <api id="M:RobotRat.TurnRight">
+      <apidata name="TurnRight" group="member" subgroup="method" />
+      <memberdata visibility="public" static="false" special="false" />
+      <proceduredata abstract="false" virtual="false" final="false" />
+      <containers>
+        <library assembly="RobotRat" module="RobotRat" />
+        <namespace api="N:" />
+        <type api="T:RobotRat" ref="true" />
+      </containers>
+    </api>
+  </apis>
+</reflection>

@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RobotRat</name>
+    </assembly>
+    <members>
+        <member name="T:RobotRat.RobotRat">
+            <summary>
+            RobotRat class lets a user control the movements
+            of a robot rat around a floor represented by
+            a 2-dimensional array.
+            </summary>
+        </member>
+        <member name="M:RobotRat.RobotRat.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Constructor method. 
+            </summary>
+            <param name="rows">Integer value representing number of floor rows</param>
+            <param name="cols">Integer value representing number of floor columns</param>
+        </member>
+        <member name="M:RobotRat.RobotRat.PrintMenu">
+            <summary>
+            Prints the floor pattern to the screen.
+            </summary>
+        </member>
+        <member name="M:RobotRat.RobotRat.ProcessMenuChoice">
+            <summary>
+            Processes user's menu selection.
+            </summary>
+        </member>
+        <member name="M:RobotRat.RobotRat.SetPenUp">
+            <summary>
+            Sets the pen to the UP state.
+            </summary>
+        </member>
+        <member name="M:RobotRat.RobotRat.SetPenDown">
+            <summary>
+            Sets the pen to the DOWN state.
+            </summary>
+        </member>
+        <member name="M:RobotRat.RobotRat.TurnRight">
+            <summary>
+            Turns the robot rat right.
+            </summary>
+        </member>
+        <member name="M:RobotRat.RobotRat.TurnLeft">
+            <summary>
+            Turns the robot rat left.
+            </summary>
+        </member>
+        <member name="M:RobotRat.RobotRat.PrintFloor">
+            <summary>
+            Prints the floor pattern to the console.
+            </summary>
+        </member>
+        <member name="M:RobotRat.RobotRat.PrintErrorMessage">
+            <summary>
+            Prints an error message. Called if a user enters an invalid
+            menu choice.
+            </summary>
+        </member>
+        <member name="M:RobotRat.RobotRat.Run">
+            <summary>
+            This method continuously displays the menu
+            and processes user menu choices.
+            </summary>
+        </member>
+        <member name="M:RobotRat.RobotRat.MoveForward">
+            <summary>
+            Called to move the robot rat forward.
+            </summary>
+        </member>
+        <member name="M:RobotRat.RobotRat.GetSpacesToMove">
+            <summary>
+             Gets the number of spaces to move from the user.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RobotRat.RobotRat.Main(System.String[])">
+            <summary>
+            The RobotRat's Main method.
+            </summary>
+            <param name="args"></param>
+        </member>
+    </members>
+</doc>

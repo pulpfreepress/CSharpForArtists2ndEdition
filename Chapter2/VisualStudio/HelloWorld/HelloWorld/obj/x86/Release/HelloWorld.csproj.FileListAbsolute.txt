@@ -1,0 +1,4 @@
+C:\Users\Administrator\Desktop\Projects\Chapter2\VisualStudio\HelloWorld\HelloWorld\bin\Release\HelloWorld.exe
+C:\Users\Administrator\Desktop\Projects\Chapter2\VisualStudio\HelloWorld\HelloWorld\bin\Release\HelloWorld.pdb
+C:\Users\Administrator\Desktop\Projects\Chapter2\VisualStudio\HelloWorld\HelloWorld\obj\x86\Release\HelloWorld.exe
+C:\Users\Administrator\Desktop\Projects\Chapter2\VisualStudio\HelloWorld\HelloWorld\obj\x86\Release\HelloWorld.pdb

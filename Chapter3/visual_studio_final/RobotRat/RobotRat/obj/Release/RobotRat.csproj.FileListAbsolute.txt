@@ -1,0 +1,8 @@
+C:\csharp_for_artists\CSharpForArtists\Projects\Chapter3\visual_studio_final\RobotRat\RobotRat\obj\Release\RobotRat.exe
+C:\csharp_for_artists\CSharpForArtists\Projects\Chapter3\visual_studio_final\RobotRat\RobotRat\obj\Release\RobotRat.pdb
+C:\csharp_for_artists\CSharpForArtists\Projects\Chapter3\visual_studio_final\RobotRat\RobotRat\bin\Release\RobotRat.exe
+C:\csharp_for_artists\CSharpForArtists\Projects\Chapter3\visual_studio_final\RobotRat\RobotRat\bin\Release\RobotRat.pdb
+C:\csharp_for_artists\CSharpForArtists\Projects\Chapter3\visual_studio_final\RobotRat\RobotRat\bin\Release\robotrat_docs.xml
+C:\csharp_for_artists\CSharpForArtists\Projects\Chapter3\visual_studio_final\RobotRat\RobotRat\obj\Release\ResolveAssemblyReference.cache
+C:\Projects\CFA\Chapter3\visual_studio_final\RobotRat\RobotRat\obj\Release\RobotRat.exe
+C:\Projects\CFA\Chapter3\visual_studio_final\RobotRat\RobotRat\obj\Release\RobotRat.pdb

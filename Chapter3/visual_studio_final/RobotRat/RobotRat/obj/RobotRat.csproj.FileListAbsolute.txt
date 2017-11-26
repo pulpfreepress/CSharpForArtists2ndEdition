@@ -1,0 +1,6 @@
+C:\Documents and Settings\Rick\Desktop\Projects\Chapter3\visual_studio_final\RobotRat\RobotRat\obj\Release\RobotRat.pdb
+C:\Documents and Settings\Rick\Desktop\Projects\Chapter3\visual_studio_final\RobotRat\RobotRat\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Rick\Desktop\Projects\Chapter3\visual_studio_final\RobotRat\RobotRat\bin\Release\RobotRat.pdb
+C:\Documents and Settings\Rick\Desktop\Projects\Chapter3\visual_studio_final\RobotRat\RobotRat\bin\Release\robotrat_docs.xml
+C:\Documents and Settings\Rick\Desktop\Projects\Chapter3\visual_studio_final\RobotRat\RobotRat\bin\Release\RobotRat.exe
+C:\Documents and Settings\Rick\Desktop\Projects\Chapter3\visual_studio_final\RobotRat\RobotRat\obj\Release\RobotRat.exe

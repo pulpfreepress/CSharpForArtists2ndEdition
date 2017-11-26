@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfPropertyEntry xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PropertyEntry>
+    <PropertyName>Rick</PropertyName>
+    <Value>Pine Forest Senior High</Value>
+  </PropertyEntry>
+  <PropertyEntry>
+    <PropertyName>Steve</PropertyName>
+    <Value>Seventy-First High School</Value>
+  </PropertyEntry>
+  <PropertyEntry>
+    <PropertyName>Jake</PropertyName>
+    <Value>Terry Sanford High School</Value>
+  </PropertyEntry>
+  <PropertyEntry>
+    <PropertyName>Laura</PropertyName>
+    <Value>Westover High School</Value>
+  </PropertyEntry>
+  <PropertyEntry>
+    <PropertyName>Bob</PropertyName>
+    <Value>Reid Ross High School</Value>
+  </PropertyEntry>
+</ArrayOfPropertyEntry>

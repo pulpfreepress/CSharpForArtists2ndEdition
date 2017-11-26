@@ -1,0 +1,14 @@
+using System;
+
+public class A {
+  private B its_b = null;
+  
+  public A(){
+    its_b = new B();
+    Console.WriteLine("A object created!");
+  }
+
+  public void MakeContainedObjectSayHi(){
+    its_b.SayHi();
+  }
+}

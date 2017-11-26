@@ -1,0 +1,11 @@
+using System;
+
+public class B {
+  public B(){
+    Console.WriteLine("B object created!");
+  }
+  
+  public void SayHi(){
+    Console.WriteLine("Hi!");
+  }
+}
